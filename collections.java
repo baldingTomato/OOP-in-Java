@@ -110,3 +110,23 @@ public class main {
 
         }
          */
+
+         ArrayList<String> arrL = new ArrayList<String>();
+        arrL.add("Sweden");
+        arrL.add("Japan");
+        arrL.add("Kuba");
+        arrL.add("Spain");
+
+        ListIterator<String> iter = arrL.listIterator();
+        while(iter.hasNext()){
+            if(iter.next().length()>0){
+                iter.remove();
+            }
+        }
+
+        System.out.println("ArrayList size: " + arrL.size());
+        //for (int i = 0; i < arrL.size(); i++) {
+        //    System.out.println(arrL.get(i));
+        //}
+    }
+}

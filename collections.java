@@ -42,3 +42,71 @@ public class main {
 
         }
         */
+
+        //code for Linked List
+        /*
+        LinkedList<String> ll = new LinkedList<String>();
+
+        while(choice == 0){
+
+            System.out.println("What do you want to do?");
+            input = sc.nextLine();
+
+            switch(input){
+
+                case "add":
+                    System.out.println("What kind of item do you want to add?");
+                    newItem = sc.nextLine();
+                    ll.add(newItem);
+                    break;
+                case "take":
+                    System.out.println("Taken item is " + ll.removeFirst());
+                    break;
+                case "print":
+                    System.out.println("Your stack looks like this: " + ll);
+                    break;
+                case "exit":
+                    choice++;
+                    break;
+                default:
+                    System.out.println("Sorry, I don't understand!");
+                    break;
+            }
+
+        }
+        */
+
+        //code for Hash Set
+        /*
+        HashSet<String> set = new HashSet<String>();
+
+        while(choice == 0){
+
+            System.out.println("What do you want to do?");
+            input = sc.nextLine();
+
+            switch(input){
+
+                case "add":
+                    System.out.println("What kind of item do you want to add?");
+                    newItem = sc.nextLine();
+                    set.add(newItem);
+                    break;
+                case "take":
+                    System.out.println("What kind of item do you want to take?");
+                    takenItem = sc.nextLine();
+                    set.remove(takenItem);
+                    break;
+                case "print":
+                    System.out.println("Your stack looks like this: " + set);
+                    break;
+                case "exit":
+                    choice++;
+                    break;
+                default:
+                    System.out.println("Sorry, I don't understand!");
+                    break;
+            }
+
+        }
+         */

@@ -111,7 +111,9 @@ public class main {
         }
          */
 
-         ArrayList<String> arrL = new ArrayList<String>();
+        // code for Iterator
+        /*
+        ArrayList<String> arrL = new ArrayList<String>();
         arrL.add("Sweden");
         arrL.add("Japan");
         arrL.add("Kuba");
@@ -128,5 +130,22 @@ public class main {
         //for (int i = 0; i < arrL.size(); i++) {
         //    System.out.println(arrL.get(i));
         //}
+         */
+
+        HashMap<String,String> map = new HashMap<String,String>();
+        map.put("Italy", "Rome");
+        map.put("France", "Paris");
+        map.put("Japan", "Tokio");
+        map.put("Russia", "Moscow");
+
+        for(Map.Entry m : map.entrySet()){
+            System.out.println("What is the capital of " + m.getKey()+"? ");
+            input = sc.nextLine();
+            if(m.getValue().equals(input)){
+                System.out.println("Correct!");
+            }else{
+                System.out.println("The correct answer is " + m.getValue());
+            }
+        }
     }
 }
